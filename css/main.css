@@ -38,6 +38,10 @@
   padding-left: 25px;
 }
 
+.header__menu li:last-of-type {
+  padding-left: 0;
+}
+
 .header__menu li a:hover {
   color: #A9292A;
 }
@@ -52,7 +56,7 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 13px;
-  padding: 0 7px;
+  padding-right: 7px;
   color: #A9292A;
   outline: none;
 }
@@ -60,6 +64,7 @@
 .header__lang:last-child {
   border-left: 1px solid #CCCCCC;
   color: #010000;
+  padding: 0 0 0 7px;
 }
 
 .header__lang:hover {
@@ -126,6 +131,7 @@
 
 .hero__main-text-date {
   padding-left: 30px;
+  color: #fff;
 }
 
 .hero__content {
@@ -135,9 +141,38 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 200px;
+  border-bottom: 2px solid #A9292A;
 }
 
 .hero__content-item {
   width: 360px;
+}
+
+.main {
+  padding-top: 25px;
+}
+
+.main h3 {
+  padding-bottom: 45px;
+}
+
+.main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main__content-item {
+  width: 310px;
+}
+
+.main__content-item:nth-child(n+4) {
+  padding-top: 60px;
 }
 /*# sourceMappingURL=main.css.map */

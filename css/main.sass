@@ -21,6 +21,8 @@
         display: flex
         li
             padding-left: 25px
+            &:last-of-type
+                padding-left: 0
             a:hover
                 color: #A9292A
             .search
@@ -28,15 +30,13 @@
     &__lang
         border: none
         background-color: #fff
-        font-weight: 500
-        font-size: 13px
-        line-height: 13px
-        padding: 0 7px
+        padding-right: 7px
         color: #A9292A
         outline: none
         &:last-child
             border-left: 1px solid #CCCCCC
             color: #010000
+            padding: 0 0 0 7px
         &:hover
             cursor: pointer
 
@@ -76,9 +76,24 @@
                 line-height: 125%
             &-date
                 padding-left: 30px
+                color: #fff
     &__content
         display: flex
         justify-content: space-between
+        padding-bottom: 200px
+        border-bottom: 2px solid #A9292A
         &-item
             width: 360px
 
+.main
+    padding-top: 25px
+    h3
+        padding-bottom: 45px
+    &__content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &-item
+            width: 310px
+            &:nth-child(n+4)
+                padding-top: 60px
