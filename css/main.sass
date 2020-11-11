@@ -6,10 +6,18 @@
     margin: 0
     list-style: none
 
+$primary-color: #010000
+$secondary-color: #A9292A
+
 .container
     width: 1280px
     padding: 0 40px
     margin: 0 auto
+
+.padding
+    padding-top: 25px
+    padding-bottom: 200px
+    border-bottom: 2px solid $secondary-color
 
 .header
     padding: 30px 0
@@ -24,24 +32,23 @@
             &:last-of-type
                 padding-left: 0
             a:hover
-                color: #A9292A
+                color: $secondary-color
             .search
                 padding: 0 54px
-    &__lang
+    button
         border: none
         background-color: #fff
         padding-right: 7px
-        color: #A9292A
+        color: $secondary-color
         outline: none
         &:last-child
             border-left: 1px solid #CCCCCC
-            color: #010000
+            color: $primary-color
             padding: 0 0 0 7px
         &:hover
             cursor: pointer
 
 .hero
-    padding-top: 30px
     &__img
         position: relative
         img
@@ -77,16 +84,15 @@
             &-date
                 padding-left: 30px
                 color: #fff
+        &-title
+            color: #fff
     &__content
         display: flex
         justify-content: space-between
-        padding-bottom: 200px
-        border-bottom: 2px solid #A9292A
         &-item
             width: 360px
 
 .main
-    padding-top: 25px
     h3
         padding-bottom: 45px
     &__content
@@ -97,3 +103,19 @@
             width: 310px
             &:nth-child(n+4)
                 padding-top: 60px
+
+.society
+    &__title
+        padding-bottom: 60px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__content
+        display: flex
+        justify-content: space-between
+        &-item
+            width: 560px
+
+.politics
+    &__title
+        padding-bottom: 60px

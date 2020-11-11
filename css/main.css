@@ -14,6 +14,12 @@
   margin: 0 auto;
 }
 
+.padding {
+  padding-top: 25px;
+  padding-bottom: 200px;
+  border-bottom: 2px solid #A9292A;
+}
+
 .header {
   padding: 30px 0;
   border-bottom: 1px solid #CCCCCC;
@@ -50,29 +56,22 @@
   padding: 0 54px;
 }
 
-.header__lang {
+.header button {
   border: none;
   background-color: #fff;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 13px;
   padding-right: 7px;
   color: #A9292A;
   outline: none;
 }
 
-.header__lang:last-child {
+.header button:last-child {
   border-left: 1px solid #CCCCCC;
   color: #010000;
   padding: 0 0 0 7px;
 }
 
-.header__lang:hover {
+.header button:hover {
   cursor: pointer;
-}
-
-.hero {
-  padding-top: 30px;
 }
 
 .hero__img {
@@ -134,6 +133,10 @@
   color: #fff;
 }
 
+.hero__main-title {
+  color: #fff;
+}
+
 .hero__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,16 +144,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 200px;
-  border-bottom: 2px solid #A9292A;
 }
 
 .hero__content-item {
   width: 360px;
-}
-
-.main {
-  padding-top: 25px;
 }
 
 .main h3 {
@@ -174,5 +171,35 @@
 
 .main__content-item:nth-child(n+4) {
   padding-top: 60px;
+}
+
+.society__title {
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.society__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.society__content-item {
+  width: 560px;
+}
+
+.politics__title {
+  padding-bottom: 60px;
 }
 /*# sourceMappingURL=main.css.map */
