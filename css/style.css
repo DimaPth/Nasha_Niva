@@ -39,6 +39,10 @@ h4 {
   color: #010000;
 }
 
+a {
+  text-decoration: none;
+}
+
 .small {
   font-weight: 500;
   font-size: 12px;
@@ -80,7 +84,7 @@ h4 {
           align-items: center;
 }
 
-.button-small button {
+.button-small span {
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
@@ -89,12 +93,14 @@ h4 {
   text-transform: uppercase;
   border: none;
   padding-right: 20px;
-  background-color: #fff;
+  background-color: #F5F4F0;
   outline: none;
 }
 
 .button-small img {
   padding-right: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .button-small:hover {

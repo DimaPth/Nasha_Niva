@@ -8,6 +8,10 @@
   list-style: none;
 }
 
+.background {
+  background-color: #F5F4F0;
+}
+
 .container {
   width: 1280px;
   padding: 0 40px;
@@ -15,7 +19,7 @@
 }
 
 .padding {
-  padding-top: 25px;
+  margin-bottom: 25px;
   padding-bottom: 200px;
   border-bottom: 2px solid #A9292A;
 }
@@ -38,6 +42,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__menu li {
@@ -58,7 +65,7 @@
 
 .header button {
   border: none;
-  background-color: #fff;
+  background-color: #F5F4F0;
   padding-right: 7px;
   color: #A9292A;
   outline: none;
@@ -74,6 +81,10 @@
   cursor: pointer;
 }
 
+.hero .container {
+  padding-top: 30px;
+}
+
 .hero__img {
   position: relative;
 }
@@ -82,14 +93,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: 2;
 }
 
 .hero__img-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 3;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(1, 0, 0, 0.6)), to(rgba(1, 0, 0, 0)));
   background: linear-gradient(360deg, rgba(1, 0, 0, 0.6) 0%, rgba(1, 0, 0, 0) 100%);
   height: 600px;
@@ -97,6 +108,8 @@
 }
 
 .hero__main {
+  position: relative;
+  z-index: 4;
   height: 600px;
   width: 770px;
   display: -webkit-box;
@@ -173,19 +186,6 @@
   padding-top: 60px;
 }
 
-.society__title {
-  padding-bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .society__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,7 +199,16 @@
   width: 560px;
 }
 
-.politics__title {
-  padding-bottom: 60px;
+.politics__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.politics__content-item {
+  width: 360px;
 }
 /*# sourceMappingURL=main.css.map */
