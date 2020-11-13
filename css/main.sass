@@ -16,11 +16,6 @@
     padding: 0 40px
     margin: 0 auto
 
-.padding
-    margin-bottom: 25px
-    padding-bottom: 200px
-    border-bottom: 2px solid $secondary-color
-
 .header
     padding: 30px 0
     border-bottom: 1px solid #CCCCCC
@@ -93,34 +88,13 @@
                 color: #fff
         &-title
             color: #fff
-    &__content
-        display: flex
-        justify-content: space-between
-        &-item
-            width: 360px
 
 .main
-    h3
-        padding-bottom: 45px
-    &__content
-        display: flex
-        justify-content: space-between
+    .content
         flex-wrap: wrap
-        &-item
-            width: 310px
-            &:nth-child(n+4)
-                padding-top: 60px
-
-.society
-    &__content
-        display: flex
-        justify-content: space-between
-        &-item
-            width: 560px
-
-.politics
-    &__content
-        display: flex
-        justify-content: space-between
-        &-item
-            width: 360px
+    .item
+        width: 310px
+        &:nth-child(n+4)
+            padding-top: 60px
+        .small
+            padding-top: 0
