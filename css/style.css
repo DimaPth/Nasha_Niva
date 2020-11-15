@@ -93,6 +93,24 @@ a {
   color: #999999;
 }
 
+.name {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #A9292A;
+  padding: 40px 0 20px;
+}
+
+.link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 135%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
 .button-small {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,6 +149,63 @@ a {
 
 .button-small:hover img {
   padding: 0 0 0 20px;
+}
+
+.button-large {
+  padding: 56px 39px;
+  border: 1px solid #A9292A;
+  border-radius: 50%;
+}
+
+.button-large span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  width: 72px;
+  color: #A9292A;
+}
+
+.button-large:hover {
+  background-color: #A9292A;
+}
+
+.button-large:hover span {
+  color: #fff;
+}
+
+.button-large2 {
+  padding: 56px 39px;
+  border: 1px solid #A9292A;
+  border-radius: 50%;
+}
+
+.button-large2 span {
+  color: #A9292A;
+}
+
+.button-large2:hover {
+  background-color: #A9292A;
+}
+
+.button-large2:hover span {
+  color: #fff;
+}
+
+.footer-button {
+  padding: 22px 82px 21px 83px;
+  border: 1px solid #fff;
+  background-color: #000000;
+}
+
+.footer-button span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .title {

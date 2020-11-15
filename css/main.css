@@ -160,4 +160,135 @@
 .main .item .small {
   padding-top: 0;
 }
+
+.projects .item {
+  position: relative;
+}
+
+.projects .item h2 {
+  padding: 40px 0;
+}
+
+.projects .item .button-large {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.projects .item .button-large2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.projects .item .button-large2 span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  width: 72px;
+}
+
+.weather .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.weather .content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 60px 142px 60px;
+}
+
+.weather .content .item {
+  width: 300px;
+  padding-bottom: 58px;
+}
+
+.opinions {
+  text-align: center;
+}
+
+.opinions .content {
+  padding-bottom: 250px;
+}
+
+.opinions .content .item {
+  width: 300px;
+}
+
+.footer {
+  background-color: #000;
+}
+
+.footer .container .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .container .wrap .title {
+  padding-top: 100px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 360px;
+}
+
+.footer .container .wrap .title h2 {
+  color: #fff;
+  padding: 0 0 40px;
+}
+
+.footer .container .wrap .content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 840px;
+  padding-top: 100px;
+}
+
+.footer .container .wrap .content .item {
+  margin-left: 60px;
+}
+
+.footer .container .wrap .content .item h4 {
+  color: #999999;
+  border-bottom: 1px solid #999;
+}
+
+.footer .container .wrap .content .item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .container .wrap .content .item__content-descr {
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .container .wrap .content .item__content-descr:last-child {
+  padding-left: 90px;
+}
 /*# sourceMappingURL=main.css.map */
