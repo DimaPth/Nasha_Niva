@@ -222,4 +222,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.button-large-mobile {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
