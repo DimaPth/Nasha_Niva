@@ -8,7 +8,7 @@
   list-style: none;
 }
 
-.background {
+body {
   background-color: #F5F4F0;
 }
 
@@ -67,7 +67,7 @@
 
 .header button:last-child {
   border-left: 1px solid #CCCCCC;
-  color: #010000;
+  color: #000100;
   padding: 0 0 0 7px;
 }
 
@@ -208,18 +208,8 @@
   bottom: 0;
 }
 
-.projects .item .button-large2 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.projects .item .button-large2 span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  width: 72px;
+.projects .item .left {
+  right: unset;
 }
 
 .weather .wrapper {
@@ -289,7 +279,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 840px;
-  padding-top: 100px;
+  padding: 100px 0 0 0;
 }
 
 .footer .container .wrap .content .item {
@@ -349,5 +339,10 @@
 
 .footer .container .wrap .content .item:nth-of-type(n+3) {
   padding: 100px 0 170px;
+}
+
+.footer__end {
+  padding: 50px 0 35px;
+  border-top: 1px solid #999999;
 }
 /*# sourceMappingURL=main.css.map */

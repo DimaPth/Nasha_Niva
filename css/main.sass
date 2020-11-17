@@ -8,7 +8,7 @@
     margin: 0
     list-style: none
 
-.background
+body
     background-color: $background-color
 
 .container
@@ -125,14 +125,8 @@
             position: absolute
             right: 0
             bottom: 0
-            &2
-                position: absolute
-                left: 0
-                bottom: 0
-                span
-                    display: flex
-                    text-align: center
-                    width: 72px
+        .left
+            right: unset
 
 .weather
     .wrapper
@@ -170,7 +164,7 @@
             .content
                 flex-wrap: wrap
                 width: 840px
-                padding-top: 100px
+                padding: 100px 0 0 0
                 .item
                     margin-left: 60px
                     h4
@@ -195,3 +189,6 @@
                                 padding-left: 90px
                     &:nth-of-type(n+3)
                         padding: 100px 0 170px
+    &__end
+        padding: 50px 0 35px
+        border-top: 1px solid #999999
