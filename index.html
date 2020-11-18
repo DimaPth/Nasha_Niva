@@ -10,48 +10,50 @@
     <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__logo"><img src="./img/logo.png" alt="Логотип"></div>
-            <nav class="header__menu">
-                <li><a href="#" class="menu">Общество</a></li>
-                <li><a href="#" class="menu">Политика</a></li>
-                <li><a href="#" class="menu">Экономика</a></li>
-                <li><a href="#" class="menu">Авто</a></li>
-                <li><a href="#" class="menu">Культура</a></li>
-                <li><a href="#" class="menu">Наука</a></li>
-                <li><a href="#" class="menu">Проекты</a></li>
-                <li><a href="#" class="menu">Погода</a></li>
-                <li><a href="#" class="menu">Мнения</a></li>
-                <li><a href="#" class="menu search">Поиск</a></li>
-                <button class="menu">РУС</button>
-                <button class="menu">БЕЛ</button>
-            </nav>
+    <header>
+        <div class="header hideonmobile">
+            <div class="container">
+                <div class="header__logo"><img src="./img/logo.png" alt="Логотип"></div>
+                <nav class="header__menu">
+                    <li><a href="#" class="menu">Общество</a></li>
+                    <li><a href="#" class="menu">Политика</a></li>
+                    <li><a href="#" class="menu">Экономика</a></li>
+                    <li><a href="#" class="menu">Авто</a></li>
+                    <li><a href="#" class="menu">Культура</a></li>
+                    <li><a href="#" class="menu">Наука</a></li>
+                    <li><a href="#" class="menu">Проекты</a></li>
+                    <li><a href="#" class="menu">Погода</a></li>
+                    <li><a href="#" class="menu">Мнения</a></li>
+                    <li><a href="#" class="menu search">Поиск</a></li>
+                    <button class="menu">РУС</button>
+                    <button class="menu">БЕЛ</button>
+                </nav>
+            </div>
+        </div>
+        <div class="header-mobile showonmobile">
+            <div class="container">
+                <div class="burger">
+                    <a href="#"><img src="./img/burger.png" alt=""></a>
+                </div>
+                <div class="logo">
+                    <img src="./img/logo320.png" alt="">
+                </div>
+                <div class="search">
+                    <a href="#"><img src="./img/search320.png" alt=""></a>
+                </div>
+            </div>
         </div>
     </header>
-    <div class="header320"> <!-- put into header -->
-        <div class="container">
-            <div class="burger">
-                <a href="#"><img src="./img/burger.png" alt=""></a>
-            </div>
-            <div class="logo">
-                <img src="./img/logo320.png" alt="">
-            </div>
-            <div class="search">
-                <a href="#"><img src="./img/search320.png" alt=""></a>
-            </div>
-        </div>
-    </div>
     <section class="hero">
         <div class="container">
-            <div class="hero__img">
+            <div class="hero__img hideonmobile">
                 <img src="./img/background.png" alt="">
                 <div class="hero__img-overlay"></div>
             </div>
-            <div class="hero__img-mobile">
+            <div class="hero__img-mobile showonmobile">
                 <img src="./img/background320.jpg" alt="">
             </div>
-            <div class="hero__main">
+            <div class="hero__main hideonmobile">
                 <div class="hero__main-text">
                     <p class="hero__main-text-economic">Экономика</p>
                     <p class="hero__main-text-date text2">07.09.2020 17:37</p>
@@ -60,7 +62,7 @@
                     10 белорусских компаний серьезно задумались о переносе деятельности в Латвию
                 </h1>
             </div>
-            <div class="hero__main-mobile">
+            <div class="hero__main-mobile showonmobile">
                 <p class="large">Экономика</p>
                 <h2>10 белорусских компаний задумались о переносе деятельности в Латвию</h2>
                 <p class="text1">07.09.2020 17:12</p>
@@ -82,7 +84,7 @@
                     <h4>Лукашенко объяснил перестановки в КГБ и органах власти</h4>
                     <p class="text2">07.09.2020 15:28</p>
                 </div>
-                <div class="item">
+                <div class="item hideonmobile">
                     <div class="item-img">
                         <img src="./img/pasha.jpg" alt="">
                     </div>
@@ -190,7 +192,7 @@
                     <h4>Тихановская высказалась о подписании договоров Лукашенко</h4>
                     <p class="text2">07.09.2020 18:43</p>
                 </div>
-                <div class="item">
+                <div class="item hideonmobile">
                     <div class="item-img">
                         <img src="./img/politics3.jpg" alt="">
                     </div>
@@ -488,7 +490,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">  <!-- Добавить li-->
+    <footer class="footer">
         <div class="container">
             <div class="wrap">
                 <div class="title">
@@ -501,47 +503,47 @@
                     <div class="item">
                         <h4>Новости</h4>
                         <div class="item__content">
+                            <nav class="item__content-descr">
+                                <li class="link"><a href="#">Общество</a></li>
+                                <li class="link"><a href="#">Политика</a></li>
+                                <li class="link"><a href="#">Экономика</a></li>
+                                <li class="link"><a href="#">Авто</a></li>
+                                <li class="link"><a href="#">Культура</a></li>
+                            </nav>
                             <div class="item__content-descr">
-                                <a href="#" class="link">Общество</a>
-                                <a href="#" class="link">Политика</a>
-                                <a href="#" class="link">Экономика</a>
-                                <a href="#" class="link">Авто</a>
-                                <a href="#" class="link">Культура</a>
-                            </div>
-                            <div class="item__content-descr">
-                                <a href="#" class="link">Наука</a>
-                                <a href="#" class="link">Проекты</a>
-                                <a href="#" class="link">Погода</a>
-                                <a href="#" class="link">Мнения</a>
-                                <a href="#" class="link">Архив</a>
+                                <li class="link"><a href="#">Наука</a></li>
+                                <li class="link"><a href="#">Проекты</a></li>
+                                <li class="link"><a href="#">Погода</a></li>
+                                <li class="link"><a href="#">Мнения</a></li>
+                                <li class="link"><a href="#">Архив</a></li>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <h4>Наши проекты</h4>
                         <div class="item-descr">
-                            <a href="#" class="link">Наша Гісторыя</a>
-                            <a href="#" class="link">Afiшa.NN</a>
-                            <a href="#" class="link">Наша Ніна</a>
-                            <a href="#" class="link">Крама</a>
+                            <li class="link"><a href="#" class="link">Наша Гісторыя</a></li>
+                            <li class="link"><a href="#" class="link">Afiшa.NN</a></li>
+                            <li class="link"><a href="#" class="link">Наша Ніна</a></li>
+                            <li class="link"><a href="#" class="link">Крама</a></li>
                         </div>
                     </div>
                     <div class="item">
                         <h4>Контакты</h4>
                         <div class="item-descr">
-                            <a href="#" class="link">nivanasha@gmail.com</a>
-                            <a href="#" class="link">+375 17 316-48-13</a>
+                            <li class="link"><a href="#" class="link">nivanasha@gmail.com</a></li>
+                            <li class="link"><a href="#" class="link">+375 17 316-48-13</a></li>
                         </div>
                     </div>
                     <div class="item">
-                        <h4>Соц. сети</h4>
+                        <h4 class="hideonmobile">Соц. сети</h4>
                         <div class="item-descr row">
-                            <a href="#" class="link">Vk</a>
-                            <a href="#" class="link">Fb</a>
-                            <a href="#" class="link">Ig</a>
-                            <a href="#" class="link">Tw</a>
-                            <a href="#" class="link">Tg</a>
-                            <a href="#" class="link">Yt</a>
+                            <li class="link"><a href="#">Vk</a></li>
+                            <li class="link"><a href="#">Fb</a></li>
+                            <li class="link"><a href="#">Ig</a></li>
+                            <li class="link"><a href="#">Tw</a></li>
+                            <li class="link"><a href="#">Tg</a></li>
+                            <li class="link"><a href="#">Yt</a></li>
                         </div>
                     </div>
                 </div>

@@ -111,6 +111,10 @@ a {
   padding-top: 20px;
 }
 
+.link a {
+  color: #ffffff;
+}
+
 .button-small {
   display: -webkit-box;
   display: -ms-flexbox;
