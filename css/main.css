@@ -8,8 +8,9 @@
   list-style: none;
 }
 
-body {
+html, body {
   background-color: #F5F4F0;
+  overflow-x: hidden;
 }
 
 .container {
