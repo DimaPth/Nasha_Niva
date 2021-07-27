@@ -1,0 +1,206 @@
+@import "variables"
+
+@media (max-width: 576px)
+  
+  // style
+  .content
+    padding-bottom: 130px
+  .mobile-col
+    padding-bottom: 0
+    flex-direction: column
+  .mobile-row
+    padding-bottom: 60px
+    .item
+        &:last-child
+          display: none
+  .item
+    width: 145px
+  .big
+    width: 300px
+    padding-bottom: 60px
+  h1
+    font-weight: 600
+    font-size: 26px
+    line-height: 135%
+    text-transform: none
+    color: $primary-color
+  h2
+    font-weight: 500
+    font-size: 22px
+    line-height: 130%
+    line-height: 130%
+    color: $primary-color
+    padding: 12px 0
+  h3
+    font-weight: 500
+    font-size: 17px
+    line-height: 135%
+    text-transform: uppercase
+    color: $secondary-color
+  h4
+    font-weight: 500
+    font-size: 16px
+    line-height: 130%
+    color: $primary-color
+    padding: 10px 0
+  .name
+    font-weight: 500
+    font-size: 16px
+    line-height: 120%
+    text-align: center
+    text-transform: uppercase
+  .text1
+    font-weight: normal
+    font-size: 14px
+    line-height: 135%
+    color: #999999
+  .text2
+    font-weight: normal
+    font-size: 10px
+    line-height: 125%
+    color: #999999
+  .small
+    font-weight: 500
+    font-size: 9px
+    line-height: 125%
+    text-transform: uppercase
+    color: $secondary-color
+    padding: 10px 0 0 0
+  .large
+    font-weight: 500
+    font-size: 12px
+    line-height: 125%
+    text-transform: uppercase
+    color: $secondary-color
+    padding: 12px 0 0 0
+  .title
+    border-top: 1px solid $secondary-color
+    padding: 15px 0 35px 0
+    display: block
+    text-align: center
+  .button-large
+    display: none
+    &2
+      display: none
+  .button-large-mobile
+    display: block
+    font-weight: 500
+    font-size: 14px
+    line-height: 14px
+    text-align: center
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    padding-bottom: 130px
+    a
+      color: $secondary-color
+      padding: 10px
+  .button-small
+    display: none
+      
+  // main
+
+  .projects-img
+    img
+      width: 145px
+      height: 145px
+  .item-img
+    img
+      width: 145px
+  .big
+    img
+      width: 300px
+  .container
+    width: 320px
+    margin: 0 auto
+    padding: 0 10px
+
+  .header-mobile
+    padding: 15px 0
+    border-bottom: 1px solid #CCCCCC
+  
+  .hero
+    &__img
+      position: static
+    &__main
+      display: none
+      &-mobile
+        display: flex
+        flex-direction: column
+        padding-bottom: 60px
+
+  .main
+    .content
+      flex-wrap: nowrap
+      flex-direction: column
+      .item
+        padding-top: 40px
+        &:first-child
+          padding-top: 0
+
+  .projects
+    .content
+      padding-bottom: 60px
+      .item
+        .text1
+          font-weight: normal
+          font-size: 10px
+          line-height: 125%
+          color: #999999
+          &:last-of-type
+            display: none
+        h2
+          font-weight: 500
+          font-size: 16px
+          line-height: 130%
+          color: $primary-color
+          padding: 10px 0
+
+  .weather
+    .wrapper
+      flex-direction: column
+      .weather-img
+        img
+          width: 300px
+      .content
+        padding: 0 0 10px 0
+        .item
+          width: 145px
+          &:nth-of-type(n+3)
+            display: none
+
+  .opinions
+    .content
+      padding-bottom: 68px
+      .item
+        width: 145px
+        &-img
+          img
+            width: 130px
+    .button-large-mobile
+      padding-bottom: 200px
+
+  .footer
+    .container
+      .wrap
+        flex-direction: column
+        .title
+          padding: 60px 0 0
+					width: 100%
+        .content
+          flex-direction: column
+					width: 100%
+					padding-bottom: 10px
+          .item
+            width: 300px
+            margin-left: 0
+            &:nth-of-type(n+3)
+              padding: 0
+            &:nth-of-type(n+2)
+              padding-top: 80px
+              
+
+  .hideonmobile
+    display: none
+
+  .showonmobile
+    display: block

@@ -8,16 +8,15 @@
   list-style: none;
 }
 
-.container {
-  width: 1280px;
-  padding: 0 40px;
-  margin: 0 auto;
+html, body {
+  background-color: #F5F4F0;
+  overflow-x: hidden;
 }
 
-.padding {
-  padding-top: 25px;
-  padding-bottom: 200px;
-  border-bottom: 2px solid #A9292A;
+.container {
+  width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .header {
@@ -38,6 +37,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__menu li {
@@ -58,7 +60,7 @@
 
 .header button {
   border: none;
-  background-color: #fff;
+  background-color: #F5F4F0;
   padding-right: 7px;
   color: #A9292A;
   outline: none;
@@ -66,7 +68,7 @@
 
 .header button:last-child {
   border-left: 1px solid #CCCCCC;
-  color: #010000;
+  color: #000100;
   padding: 0 0 0 7px;
 }
 
@@ -74,22 +76,43 @@
   cursor: pointer;
 }
 
+.header-mobile {
+  display: none;
+}
+
+.header-mobile .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .container {
+  padding-top: 30px;
+}
+
 .hero__img {
   position: relative;
+}
+
+.hero__img-mobile {
+  display: none;
 }
 
 .hero__img img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: 2;
 }
 
 .hero__img-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 3;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(1, 0, 0, 0.6)), to(rgba(1, 0, 0, 0)));
   background: linear-gradient(360deg, rgba(1, 0, 0, 0.6) 0%, rgba(1, 0, 0, 0) 100%);
   height: 600px;
@@ -97,6 +120,8 @@
 }
 
 .hero__main {
+  position: relative;
+  z-index: 4;
   height: 600px;
   width: 770px;
   display: -webkit-box;
@@ -112,6 +137,10 @@
   color: #fff;
   padding: 0 0 60px 60px;
   margin-bottom: 80px;
+}
+
+.hero__main-mobile {
+  display: none;
 }
 
 .hero__main-text {
@@ -137,69 +166,172 @@
   color: #fff;
 }
 
-.hero__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.hero__content-item {
-  width: 360px;
-}
-
-.main h3 {
-  padding-bottom: 45px;
-}
-
-.main__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.main .content {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.main__content-item {
+.main .item {
   width: 310px;
 }
 
-.main__content-item:nth-child(n+4) {
+.main .item:nth-child(n+4) {
   padding-top: 60px;
 }
 
-.society__title {
-  padding-bottom: 60px;
+.main .item .small {
+  padding-top: 0;
+}
+
+.projects .item {
+  position: relative;
+}
+
+.projects .item h2 {
+  padding: 40px 0;
+}
+
+.projects .item .button-large {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.projects .item .left {
+  right: unset;
+}
+
+.weather .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.society__content {
+.weather .content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 60px 142px 60px;
+}
+
+.weather .content .item {
+  width: 300px;
+  padding-bottom: 58px;
+}
+
+.opinions {
+  text-align: center;
+}
+
+.opinions .content {
+  padding-bottom: 250px;
+}
+
+.opinions .content .item {
+  width: 300px;
+}
+
+.footer {
+  background-color: #000;
+}
+
+.footer .container .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.society__content-item {
-  width: 560px;
+.footer .container .wrap .title {
+  padding-top: 100px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 360px;
 }
 
-.politics__title {
-  padding-bottom: 60px;
+.footer .container .wrap .title h2 {
+  color: #fff;
+  padding: 0 0 40px;
+}
+
+.footer .container .wrap .content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 840px;
+  padding: 100px 0 0 0;
+}
+
+.footer .container .wrap .content .item {
+  margin-left: 60px;
+}
+
+.footer .container .wrap .content .item h4 {
+  color: #999999;
+  border-bottom: 1px solid #999;
+}
+
+.footer .container .wrap .content .item-descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .container .wrap .content .item .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .container .wrap .content .item .row li {
+  margin-left: 30px;
+}
+
+.footer .container .wrap .content .item .row li:first-child {
+  margin-left: 0;
+}
+
+.footer .container .wrap .content .item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .container .wrap .content .item__content-descr {
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .container .wrap .content .item__content-descr:last-child {
+  padding-left: 90px;
+}
+
+.footer .container .wrap .content .item:nth-of-type(n+3) {
+  padding: 100px 0 170px;
+}
+
+.footer__end {
+  padding: 50px 0 35px;
+  border-top: 1px solid #999999;
 }
 /*# sourceMappingURL=main.css.map */

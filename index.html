@@ -7,34 +7,53 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__logo"><img src="./img/logo.png" alt="Логотип"></div>
-            <nav class="header__menu">
-                <li><a href="#" class="menu">Общество</a></li>
-                <li><a href="#" class="menu">Политика</a></li>
-                <li><a href="#" class="menu">Экономика</a></li>
-                <li><a href="#" class="menu">Авто</a></li>
-                <li><a href="#" class="menu">Культура</a></li>
-                <li><a href="#" class="menu">Наука</a></li>
-                <li><a href="#" class="menu">Проекты</a></li>
-                <li><a href="#" class="menu">Погода</a></li>
-                <li><a href="#" class="menu">Мнения</a></li>
-                <li><a href="#" class="menu search">Поиск</a></li>
-                <button class="menu">РУС</button>
-                <button class="menu">БЕЛ</button>
-            </nav>
+    <header>
+        <div class="header hideonmobile">
+            <div class="container">
+                <div class="header__logo"><img src="./img/logo.png" alt="Логотип"></div>
+                <nav class="header__menu">
+                    <li><a href="#" class="menu">Общество</a></li>
+                    <li><a href="#" class="menu">Политика</a></li>
+                    <li><a href="#" class="menu">Экономика</a></li>
+                    <li><a href="#" class="menu">Авто</a></li>
+                    <li><a href="#" class="menu">Культура</a></li>
+                    <li><a href="#" class="menu">Наука</a></li>
+                    <li><a href="#" class="menu">Проекты</a></li>
+                    <li><a href="#" class="menu">Погода</a></li>
+                    <li><a href="#" class="menu">Мнения</a></li>
+                    <li><a href="#" class="menu search">Поиск</a></li>
+                    <button class="menu">РУС</button>
+                    <button class="menu">БЕЛ</button>
+                </nav>
+            </div>
+        </div>
+        <div class="header-mobile showonmobile">
+            <div class="container">
+                <div class="burger">
+                    <a href="#"><img src="./img/burger.png" alt=""></a>
+                </div>
+                <div class="logo">
+                    <img src="./img/logo320.png" alt="">
+                </div>
+                <div class="search">
+                    <a href="#"><img src="./img/search320.png" alt=""></a>
+                </div>
+            </div>
         </div>
     </header>
     <section class="hero">
-        <div class="container padding">
-            <div class="hero__img">
+        <div class="container">
+            <div class="hero__img hideonmobile">
                 <img src="./img/background.png" alt="">
                 <div class="hero__img-overlay"></div>
             </div>
-            <div class="hero__main">
+            <div class="hero__img-mobile showonmobile">
+                <img src="./img/background320.jpg" alt="">
+            </div>
+            <div class="hero__main hideonmobile">
                 <div class="hero__main-text">
                     <p class="hero__main-text-economic">Экономика</p>
                     <p class="hero__main-text-date text2">07.09.2020 17:37</p>
@@ -43,25 +62,30 @@
                     10 белорусских компаний серьезно задумались о переносе деятельности в Латвию
                 </h1>
             </div>
-            <div class="hero__content">
-                <div class="hero__content-item">
-                    <div class="hero__content-item-img">
+            <div class="hero__main-mobile showonmobile">
+                <p class="large">Экономика</p>
+                <h2>10 белорусских компаний задумались о переносе деятельности в Латвию</h2>
+                <p class="text1">07.09.2020 17:12</p>
+            </div>
+            <div class="content mobile-row">
+                <div class="item">
+                    <div class="item-img">
                         <img src="./img/naval.jpg" alt="">
                     </div>
                     <p class="small">Общество</p>
                     <h4>Немецкие врачи вывели Алексея Навального из искусственной комы</h4>
                     <p class="text2">07.09.2020 16:26</p>
                 </div>
-                <div class="hero__content-item">
-                    <div class="hero__content-item-img">
+                <div class="item">
+                    <div class="item-img">
                         <img src="./img/road.jpg" alt="">
                     </div>
                     <p class="small">Политика</p>
                     <h4>Лукашенко объяснил перестановки в КГБ и органах власти</h4>
                     <p class="text2">07.09.2020 15:28</p>
                 </div>
-                <div class="hero__content-item">
-                    <div class="hero__content-item-img">
+                <div class="item hideonmobile">
+                    <div class="item-img">
                         <img src="./img/pasha.jpg" alt="">
                     </div>
                     <p class="small">Политика</p>
@@ -72,35 +96,37 @@
         </div>
     </section>
     <section class="main">
-        <div class="container padding">
-            <h3>Коротко о главном</h3>
-            <div class="main__content">
-                <div class="main__content-item">
+        <div class="container">
+            <div class="title">
+                <h3>Коротко о главном</h3>
+            </div>
+            <div class="content">
+                <div class="item">
                     <p class="small">Общество</p>
                     <h4>День города в Минске пройдет без массовых гуляний… «в связи с коронавирусом»</h4>
                     <p class="text2">07.09.2020 12:26</p>
                 </div>
-                <div class="main__content-item">
+                <div class="item">
                     <p class="small">Культура</p>
                     <h4>Черновая версия фильма «Янка Купала» появилась в интернете</h4>
                     <p class="text2">07.09.2020 12:24</p>
                 </div>
-                <div class="main__content-item">
+                <div class="item">
                     <p class="small">Политика</p>
                     <h4>СМИ назвали дату встречи Лукашенко и Путина — 14 сентября</h4>
                     <p class="text2">07.09.2020 12:17</p>
                 </div>
-                <div class="main__content-item">
+                <div class="item">
                     <p class="small">Экономика</p>
                     <h4>Доллар подорожал в начале торгов. В обменниках его продают по 2,65…2,7 белорусских рублей</h4>
                     <p class="text2">07.09.2020 11:20</p>
                 </div>
-                <div class="main__content-item">
+                <div class="item">
                     <p class="small">Наука</p>
                     <h4>99% жителей Гомельской области стал доступен 4G от life:) — это все деревни без исключений</h4>
                     <p class="text2">07.09.2020 11:16</p>
                 </div>
-                <div class="main__content-item">
+                <div class="item">
                     <p class="small">Авто</p>
                     <h4>Зампред Мингорисполкома: Не нужно превращать проезжую часть в стиральную доску</h4>
                     <p class="text2">07.09.2020 11:06</p>
@@ -109,44 +135,428 @@
         </div>
     </section>
     <section class="society">
-        <div class="container padding">
+        <div class="container">
             <div class="title">
                 <h3>Общество</h3>
-                <div class="button-small">
-                    <button>Читать еще</button>
+                <a href="#" class="button-small">
+                    <span>Читать еще</span>
                     <img src="./img/arrow.png" alt="">
-                </div>
+                </a>
             </div>
-            <div class="society__content">
-                <div class="society__content-item">
-                    <div class="society__content-item-img">
+            <div class="content mobile-col">
+                <div class="item big">
+                    <div class="item-img">
                         <img src="./img/woman.jpg" alt="">
                     </div>
                     <p class="large">Общество</p>
                     <h2>Марию Колесникову неизвестные похитили в центре Минска</h2>
                     <p class="text1">07.09.2020 11:23</p>
                 </div>
-                <div class="society__content-item">
-                    <div class="society__content-item-img">
+                <div class="item big">
+                    <div class="item-img">
                         <img src="./img/football.jpg" alt="">
                     </div>
                     <p class="large">Общество</p>
                     <h2>Футболист «Слуцка» Юрий Козлов — силовикам: Зачем избиваете людей?</h2>
                     <p class="text1">07.09.2020 10:54</p>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="politics">
-        <div class="container padding">
-            <div class="title">
-                <h3>Политика</h3>
-                <div class="button-small">
-                    <button>Читать еще</button>
-                    <img src="./img/arrow.png" alt="">
+                <div class="button-large-mobile">
+                    <a href="#">Читать еще</a>
                 </div>
             </div>
         </div>
     </section>
+    <section class="politics">
+        <div class="container">
+            <div class="title">
+                <h3>Политика</h3>
+                <a href="#" class="button-small">
+                    <span>Читать еще</span>
+                    <img src="./img/arrow.png" alt="">
+                </a>
+            </div>
+            <div class="content mobile-row">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./img/politics1.jpg" alt="">
+                    </div>
+                    <p class="small">Политика</p>
+                    <h4>Глава дипломатии ЕС: В Беларуси необходим национальный диалог</h4>
+                    <p class="text2">07.09.2020 09:56</p>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./img/politics2.jpg" alt="">
+                    </div>
+                    <p class="small">Политика</p>
+                    <h4>Тихановская высказалась о подписании договоров Лукашенко</h4>
+                    <p class="text2">07.09.2020 18:43</p>
+                </div>
+                <div class="item hideonmobile">
+                    <div class="item-img">
+                        <img src="./img/politics3.jpg" alt="">
+                    </div>
+                    <p class="small">Политика</p>
+                    <h4>Лукашенко: Главная наша задача — это экономика</h4>
+                    <p class="text2">07.09.2020 16:17</p>
+                </div>
+            </div>
+            <div class="button-large-mobile">
+                <a href="#">Читать еще</a>
+            </div>
+        </div>
+    </section>
+    <section class="economic">
+        <div class="container">
+            <div class="title">
+                <h3>Экономика</h3>
+                <a href="#" class="button-small">
+                    <span>Читать еще</span>
+                    <img src="./img/arrow.png" alt="">
+                </a>
+            </div>
+            <div class="content mobile-col">
+                <div class="item big">
+                    <div class="item-img">
+                        <img src="./img/gold.jpg" alt="">
+                    </div>
+                    <p class="large">Экономика</p>
+                    <h2>Золотовалютные резервы в августе обвалились на 1,4 миллиарда долларов</h2>
+                    <p class="text1">07.09.2020 09:43</p>
+                </div>
+                <div class="item big">
+                    <div class="item-img">
+                        <img src="./img/gas.jpg" alt="">
+                    </div>
+                    <p class="large">Экономика</p>
+                    <h2>Долг Беларуси за газ составил 328 миллионов долларов</h2>
+                    <p class="text1">03.09.2020 19:14</p>
+                </div>
+                <div class="button-large-mobile">
+                    <a href="#">Читать еще</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="auto">
+        <div class="container">
+            <div class="title">
+                <h3>Авто</h3>
+                <a href="#" class="button-small">
+                    <span>Читать еще</span>
+                    <img src="./img/arrow.png" alt="">
+                </a>
+            </div>
+            <div class="content mobile-row">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./img/auto1.jpg" alt="">
+                    </div>
+                    <p class="small">Авто</p>
+                    <h4>Дорожный сбор отвяжут от гостехосмотра в ближайшее время</h4>
+                    <p class="text2">10.07.2020 20:20</p>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./img/auto2.jpg" alt="">
+                    </div>
+                    <p class="small">Авто</p>
+                    <h4>Электромобили Geely поступят в продажу в 2021 года</h4>
+                    <p class="text2">01.07.2020 12:03</p>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./img/auto3.jpg" alt="">
+                    </div>
+                    <p class="small">Авто</p>
+                    <h4>С 1 июля отменяются ограничения для транзитных дальнобойщиков</h4>
+                    <p class="text2">29.06.2020 18:56</p>
+                </div>
+            </div>
+            <div class="button-large-mobile">
+                <a href="#">Читать еще</a>
+            </div>
+        </div>
+    </section>
+    <section class="culture">
+        <div class="container">
+            <div class="title">
+                <h3>Культура</h3>
+                <a href="#" class="button-small">
+                    <span>Читать еще</span>
+                    <img src="./img/arrow.png" alt="">
+                </a>
+            </div>
+            <div class="content mobile-col">
+                <div class="item big">
+                    <div class="item-img">
+                        <img src="./img/culture1.jpg" alt="">
+                    </div>
+                    <p class="large">Культура</p>
+                    <h2>«Би-2» переносят концерт в Минске. «В текущей ситуации концерт неуместен»</h2>
+                    <p class="text1">04.09.2020 16:14</p>
+                </div>
+                <div class="item big">
+                    <div class="item-img">
+                        <img src="./img/culture2.jpg" alt="">
+                    </div>
+                    <p class="large">Культура</p>
+                    <h2>Министр культуры: По Купаловскому театру ситуация небезнадежна</h2>
+                    <p class="text1">04.09.2020 12:39</p>
+                </div>
+                <div class="button-large-mobile">
+                    <a href="#">Читать еще</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="science">
+        <div class="container">
+            <div class="title">
+                <h3>Наука</h3>
+                <a href="#" class="button-small">
+                    <span>Читать еще</span>
+                    <img src="./img/arrow.png" alt="">
+                </a>
+            </div>
+            <div class="content mobile-row">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./img/science1.jpg" alt="">
+                    </div>
+                    <p class="small">Наука</p>
+                    <h4>«Лодэ» начинает делать тесты на антитела к коронавирусу</h4>
+                    <p class="text2">06.09.2020 20:45</p>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./img/science2.jpg" alt="">
+                    </div>
+                    <p class="small">Наука</p>
+                    <h4>99% жителей Гомельской области стал доступен 4G от life:)</h4>
+                    <p class="text2">05.08.2020 15:05</p>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./img/science3.jpg" alt="">
+                    </div>
+                    <p class="small">Наука</p>
+                    <h4>В Швейцарии назвали источники заражения Covid-19 летом</h4>
+                    <p class="text2">02.08.2020 20:39</p>
+                </div>
+            </div>
+            <div class="button-large-mobile">
+                <a href="#">Читать еще</a>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+            <div class="title">
+                <h3>Проекты</h3>
+                <a href="#" class="button-small">
+                    <span>Читать еще</span>
+                    <img src="./img/arrow.png" alt="">
+                </a>
+            </div>
+            <div class="content">
+                <div class="projects-img">
+                    <img src="./img/project1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <p class="text1">28.08.2020 02:10</p>
+                    <h2>«Наша Ніва» собирает средства на продолжение работы</h2>
+                    <p class="text1">NN.BY заблокировали. Чтобы Наша Нива продолжала работу в Телеграме, поддержите нас. Проще за все сделать это, перечислив ...</p>
+                    <a href="#" class="button-large">
+                        <span>Читать далее</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="item">
+                    <p class="text1">27.07.2020 09:41</p>
+                    <h2>30 лет назад была принята Декларация о государственном суверенитете</h2>
+                    <p class="text1">27 июля 1990 года — это был очень жаркий день.
+                        Декларация провозгласила «полный государственный суверенитет Республики ...
+                    </p>
+                    <a href="#" class="button-large left">
+                        <span>Читать далее</span>
+                    </a>
+                </div>
+                <div class="projects-img">
+                    <img src="./img/project2.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="projects-img">
+                    <img src="./img/project3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <p class="text1">19.07.2020 16:00</p>
+                    <h2>«Наша гісторыя»: многоходовка Гедимина</h2>
+                    <p class="text1">Великий князь литовский Гедимин — достойный герой нового номера «Нашай гісторыі». Выдающийся военачальник и ...</p>
+                    <a href="#" class="button-large">
+                        <span>Читать далее</span>
+                    </a>
+                </div>
+            </div>
+            <div class="button-large-mobile">
+                <a href="#">Читать еще</a>
+            </div>
+        </div>
+    </section>
+    <section class="weather">
+        <div class="container">
+            <div class="title">
+                <h3>Погода</h3>
+                <a href="#" class="button-small">
+                    <span>Читать еще</span>
+                    <img src="./img/arrow.png" alt="">
+                </a>
+            </div>
+            <div class="wrapper">
+                <div class="weather-img">
+                    <img src="./img/weater.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="item">
+                        <h4>Прогноз погоды на 8—10 сентября: дожди и ветер</h4>
+                        <p class="text2">07.09.2020 13:06</p>
+                    </div>
+                    <div class="item">
+                        <h4>Синоптики: 7 сентября возможны сильные дожди</h4>
+                        <p class="text2">07.09.2020 08:15</p>
+                    </div>
+                    <div class="item">
+                        <h4>Прогноз погоды на 5—7 сентября</h4>
+                        <p class="text2">04.09.2020 12:45</p>
+                    </div>
+                    <div class="item">
+                        <h4>Синоптики: 4 сентября — до +24</h4>
+                        <p class="text2">04.09.2020 07:28</p>
+                    </div>
+                    <div class="item">
+                        <h4>Пятница и выходные дни: тепло, местами грозы</h4>
+                        <p class="text2">03.09.2020 11:39</p>
+                    </div>
+                    <div class="item">
+                        <h4>Синоптики: 3 сентября — дожди, около +24</h4>
+                        <p class="text2">03.09.2020 08:30</p>
+                    </div>
+                </div>
+                <div class="button-large-mobile">
+                    <a href="#">Читать еще</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="opinions">
+        <div class="container">
+            <div class="title">
+                <h3>Мнения</h3>
+                <a href="#" class="button-small">
+                    <span>Читать еще</span>
+                    <img src="./img/arrow.png" alt="">
+                </a>
+            </div>
+            <div class="content mobile-row">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./img/opinions1.png" alt="">
+                    </div>
+                    <p class="name">Виктор Мартинович</p>
+                    <h4>Как они думают дальше управлять?</h4>
+                    <p class="text2">31.08.2020 14:22</p>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./img/opinions2.png" alt="">
+                    </div>
+                    <p class="name">Павел Якубович</p>
+                    <h4>Самая большая ошибка — назначение Кочановой</h4>
+                    <p class="text2">20.08.2020 11:12</p>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./img/opinions3.png" alt="">
+                    </div>
+                    <p class="name">Андрей Курейчик</p>
+                    <h4>Белорусы, вы хоть поняли, что произошло?!</h4>
+                    <p class="text2">19.08.2020 07:21</p>
+                </div>
+            </div>
+            <div class="button-large-mobile">
+                <a href="#">Читать еще</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="wrap">
+                <div class="title">
+                    <h2>Хотите поделиться новостью?</h2>
+                    <a href="#" class="footer-button">
+                        <span>Прислать новость</span>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="item">
+                        <h4>Новости</h4>
+                        <div class="item__content">
+                            <nav class="item__content-descr">
+                                <li class="link"><a href="#">Общество</a></li>
+                                <li class="link"><a href="#">Политика</a></li>
+                                <li class="link"><a href="#">Экономика</a></li>
+                                <li class="link"><a href="#">Авто</a></li>
+                                <li class="link"><a href="#">Культура</a></li>
+                            </nav>
+                            <div class="item__content-descr">
+                                <li class="link"><a href="#">Наука</a></li>
+                                <li class="link"><a href="#">Проекты</a></li>
+                                <li class="link"><a href="#">Погода</a></li>
+                                <li class="link"><a href="#">Мнения</a></li>
+                                <li class="link"><a href="#">Архив</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4>Наши проекты</h4>
+                        <div class="item-descr">
+                            <li class="link"><a href="#" class="link">Наша Гісторыя</a></li>
+                            <li class="link"><a href="#" class="link">Afiшa.NN</a></li>
+                            <li class="link"><a href="#" class="link">Наша Ніна</a></li>
+                            <li class="link"><a href="#" class="link">Крама</a></li>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4>Контакты</h4>
+                        <div class="item-descr">
+                            <li class="link"><a href="#" class="link">nivanasha@gmail.com</a></li>
+                            <li class="link"><a href="#" class="link">+375 17 316-48-13</a></li>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4 class="hideonmobile">Соц. сети</h4>
+                        <div class="item-descr row">
+                            <li class="link"><a href="#">Vk</a></li>
+                            <li class="link"><a href="#">Fb</a></li>
+                            <li class="link"><a href="#">Ig</a></li>
+                            <li class="link"><a href="#">Tw</a></li>
+                            <li class="link"><a href="#">Tg</a></li>
+                            <li class="link"><a href="#">Yt</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__end">
+            <div class="container">
+                <div class="footer__end-desrc">
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

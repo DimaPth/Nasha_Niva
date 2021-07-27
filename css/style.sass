@@ -1,6 +1,16 @@
-$primary-color: #010000
-$secondary-color: #A9292A
+@import "variables"
 
+.content
+    display: flex
+    justify-content: space-between
+    padding-bottom: 200px
+
+.item
+  width: 360px
+
+.big
+  width: 560px
+  
 .menu
   text-decoration: none
   color: $primary-color
@@ -9,14 +19,12 @@ $secondary-color: #A9292A
   line-height: 13px
   text-transform: uppercase
 
-
 h1
   font-weight: 600
   font-size: 36px
   line-height: 135%
   text-transform: uppercase
   color: $primary-color
-
 
 h2
   font-weight: 500
@@ -25,14 +33,12 @@ h2
   color: $primary-color
   padding-bottom: 20px
 
-
 h3
   font-weight: 500
   font-size: 22px
   line-height: 135%
   text-transform: uppercase
   color: $secondary-color
-
 
 h4
   font-weight: 500
@@ -41,6 +47,8 @@ h4
   padding-bottom: 15px
   color: $primary-color
 
+a
+  text-decoration: none
 
 .small
   font-weight: 500
@@ -50,7 +58,6 @@ h4
   color: $secondary-color
   padding: 15px 0
 
-
 .large
   font-weight: 500
   font-size: 16px
@@ -59,14 +66,11 @@ h4
   color: $secondary-color
   padding: 20px 0
 
-
 .text1
   font-weight: normal
   font-size: 16px
   line-height: 135%
   color: #999999
-  
-
 
 .text2
   font-weight: normal
@@ -74,10 +78,28 @@ h4
   line-height: 125%
   color: #999999
 
+.name
+  font-weight: 500
+  font-size: 22px
+  line-height: 22px
+  text-transform: uppercase
+  color: $secondary-color
+  padding: 40px 0 20px
+
+.link
+  font-weight: normal
+  font-size: 16px
+  line-height: 135%
+  letter-spacing: 0.01em
+  color: #ffffff
+  padding-top: 20px
+  a
+    color: #ffffff
+
 .button-small
   display: flex
   align-items: center
-  button
+  span
     font-weight: 500
     font-size: 12px
     line-height: 12px
@@ -86,10 +108,11 @@ h4
     text-transform: uppercase
     border: none
     padding-right: 20px
-    background-color: #fff
+    background-color: $background-color
     outline: none
   img
     padding-right: 20px
+    transition: 0.5s
   &:hover
     cursor: pointer
     button
@@ -97,8 +120,40 @@ h4
     img
       padding: 0 0 0 20px
 
+.button-large
+  padding: 56px 39px
+  border: 1px solid $secondary-color
+  border-radius: 50%  
+  span
+    display: flex
+    text-align: center
+    width: 72px
+    color: $secondary-color
+  &:hover
+    background-color: $secondary-color
+    span
+      color: #fff
+
+.footer-button
+  padding: 22px 82px 21px 83px
+  border: 1px solid #cccccc
+  background-color: #000000
+  span
+    color: #fff
+    font-weight: 500
+    font-size: 12px
+    line-height: 12px
+    text-align: center
+    letter-spacing: 0.04em
+    text-transform: uppercase
+
 .title
+  border-top: 2px solid $secondary-color
+  padding-top: 25px
   padding-bottom: 60px
   display: flex
   justify-content: space-between
   align-items: center
+
+.button-large-mobile
+  display: none
